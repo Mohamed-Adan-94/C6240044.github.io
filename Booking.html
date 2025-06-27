@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booking</title>
+  <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+header{
+    
+    /* width: 100px;
+    height: 100vh; */
+    padding: 0px 8.5%;
+    background-color: #fcb900;
+    position: sticky;
+    top: 0;
+    
+
+}
+nav{
+   display: flex;
+    width: 100%;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.logo{
+    width: 130px;
+    height: 50px;
+    border-radius: 70px;
+    
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+a:hover{
+    color:#333;
+    border-bottom: 2px solid #333 ;
+}
+nav  .button{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    color: #fcb900;
+    font-weight:bold ;
+    text-align: center;
+
+}
+nav .button:hover{
+    background-color: #fcb900;
+    color: white;
+    border: 1px solid white;
+}
+ div{
+    text-align: center;
+    font-family:monospace;
+    
+ }
+
+
+footer{
+    background-color: #fcb900;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+
+.booking {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.booking h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+}
+form label, form input, form select, form textarea{
+    margin-left: 10px;
+}
+form fieldset legend{
+  text-align: center; 
+  text-decoration: none;
+  padding: 6px;
+  background-color:#fcb900;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+    
+}
+form label {
+      /* display: block; */
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+}
+
+form input, form select, form textarea{
+      /* width: 100%; */
+      padding: 6px;
+      /* margin-bottom: 1rem; */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      
+}
+
+form button {
+      background-color: #fcb900;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-left: 370px;
+      margin-bottom: 10px;
+
+}
+
+form button:hover {
+      background-color: #0f3460;
+      
+}
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+            <img src="images/logonow.jpeg" alt="logo" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Data</a></li>
+                <li><a href="#">Booking</a></li>
+                <li><a href="Help.html">Help</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+            <a href="#" class="button">Contact Us</a>
+            </nav> 
+    
+  </header>
+  <div>
+  <h1>Join the Coding Journey</h1>
+    <p>Fill the form below to reserve your seat</p>
+    </div>
+  <section class="booking">
+    <h2 style="color: #fcb900 ; background-color: #0f3460; border-radius: 30px;">Booking Form</h2>
+<form>
+    <fieldset>
+            <legend>Personal Preferences</legend> <br>
+        <label>Full Name:</label>
+            <input type="text" name="fullname" placeholder="Enter Your Name" required /><br><br>
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" class="gender"/> Male<br>
+            <!-- <label for="male">Male</label><br/> -->
+            <input type="radio"  name="gender" class="gender" /> Female <br><br>
+            <!-- <label for="female">Female</label><br/><br/> --> 
+
+        <label>Choose Course:</label>
+            <select name="course">
+                <option>HTML & CSS Basics</option>
+                <option>Python for Beginners</option>
+                <option>Web Design Fundamentals</option>
+            </select><br><br>
+         
+        
+
+        <label>Hobbies:</label><br/>
+            <input type="checkbox" name="hobbies"/> Reading <br>
+            <!-- <label for="reading">Reading</label><br/> -->
+            <input type="checkbox"  name="hobbies"/> Designing <br>
+            <!-- <label for="design">Designing</label><br/> -->
+            <input type="checkbox" name="hobbies" /> Programming <br>
+            <!-- <label for="gaming">Gaming</label><br/> -->
+            <input type="checkbox" name="hobbies" /> Other <br><br>
+            <!-- <label for="otherhobby">Other</label> -->
+
+      
+      <label>Any Notes?</label><br>
+      <textarea id="message" name="message" rows="4" placeholder="Your message..."></textarea><br>
+    <label>Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="example@mail.com" required /> <br><br>
+      <button type="submit">Submit Booking</button>
+      </fieldset>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LearnToCode ACADEMY | Booking Page</p>
+  </footer>
+
+</body>
+</html>
