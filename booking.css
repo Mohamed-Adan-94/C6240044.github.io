@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+header{
+    padding: 0px 8.5%;
+    background-color: #fcb900;
+    position: sticky;
+    top: 0;
+}
+nav{
+   display: flex;
+    width: 100%;
+    align-items:center;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+.logo{
+    width: 130px;
+    height: 50px;
+    border-radius: 70px;
+    
+}
+nav ul{
+    flex: 1;
+    text-align: center;
+    
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+}
+a:hover{
+    color:#333;
+    border-bottom: 2px solid #333 ;
+}
+nav  .button{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+
+    text-decoration: none;
+    color: #fcb900;
+    font-weight:bold ;
+    text-align: center;
+
+}
+nav .button:hover{
+    background-color: #fcb900;
+    color: white;
+    border: 1px solid white;
+}
+ div{
+    text-align: center;
+    font-family:monospace;
+    
+ }
+
+
+footer{
+    background-color: #fcb900;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    margin-top: 50px;
+}
+
+.booking {
+      max-width: 600px;
+      margin: 2rem auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.booking h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+}
+
+form label, form input, form select, form textarea{
+    margin-left: 10px;
+}
+
+form fieldset legend{
+  text-align: center; 
+  text-decoration: none;
+  padding: 10px;
+  background-color:#fcb900;
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+    
+}
+
+form label {
+     
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+}
+
+form input, form select, form textarea{
+      padding: 6px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      
+}
+
+form button {
+      background-color: #fcb900;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+      margin-left: 370px;
+      margin-bottom: 10px;
+
+}
+
+form button:hover {
+      background-color: #0f3460;
+      
+}
